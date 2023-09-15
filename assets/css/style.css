@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #176B87;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Tajawal;
+    text-align: center;
+}
+.empty {
+    display: none !important;
+}
+nav {
+    text-align: center;
+    background-color: rgb(11 12 12 / 11%);
+    padding: 10px;
+}
+#timerSection {
+text-align: center;
+margin: 30px;
+}
+div#surahId {
+    background-color: rgb(11 12 12 / 11%);
+    border-radius: 10px;
+    width: 16%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.chooseSurah {
+    margin-left: 13px;
+    color: #fff;
+    margin-top: 2px;
+}
+.surahName {
+    margin-right: 10px;
+    padding: 10px 0px;
+}
+.surahName h3 {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+div#surahId .icon {
+    padding: 10px 13px;
+    background: rgb(5 59 80 / 31%);
+    border-radius: 5px;
+    color: #01ACEF;
+}
+.theData {
+    display: flex;
+    align-items: center;
+}
+div#timer {
+    font-size: 7rem;
+    color: #fff;
+    margin: 35px 0px 0px;
+}
+div#timer span {
+    padding: 0px;
+    margin: 0px;
+}
+#playpauseBtn {
+    background: rgb(11 12 12 / 11%);
+    border: 0px;
+    outline: 0px;
+    border-radius: 50%;
+    padding: 12px 19px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #01ACEF;
+}
+#sessionHistory {
+    width: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    background: rgb(11 12 12 / 11%);
+    padding: 20px 31px;
+    border-radius: 16px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255 255 255 / 10%);
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+div#suraHistory .icon, #surahData {
+    display: inline-flex;
+}
+div#suraHistory {
+    display: flex;
+    align-items: center;
+}
+div#suraHistory .icon {
+    background: rgb(0 0 0 / 31%);
+    color: #01acef;
+    padding: 20px;
+    border-radius: 13px;
+    font-size: 23px;
+    margin-left: 8px;
+}
+.surahDate {
+    margin-right: 8px;
+    margin-top: 4px;
+}
+div#surahTimerTime p {
+    margin: 0px;
+    margin-left: 15px;
+    margin-top: 4px;
+    font-size: 25px;
+    padding: 0px;
+}
