@@ -13,10 +13,15 @@ window.addEventListener('load', function () {
 });
 
 function updateCountdown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    timer.innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-    time--;
+    // Check if the timer has reached "00:00"
+    if (minutes === 0 && seconds === 0) {
+        clearInterval(intervalId); // Clear the interval
+        audio.pause(); // Pause the audio
+        // Additional logic to handle what should happen when the timer reaches "00:00"
+        // For example, you can display a message or perform some other action.
+    } else {
+        time--;
+    }
 }
 
 function setCookie(name, value, days) {
