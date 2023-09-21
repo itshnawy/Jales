@@ -6,7 +6,7 @@ let isNotClicked = true;
 let intervalId; // Variable to store the interval ID
 let surahName = document.querySelector(".surahName h3");
 let sessions = document.querySelector("#sessionHistory")
-
+const audio = document.getElementById('myAudio');
 
 window.addEventListener('load', function () {
     loadSessions();
@@ -105,13 +105,14 @@ function playfn() {
         setCookie('countdownDate', playDate, 365 * 10); // Store play date for 10 years
         setCookie('countdownSurah', surahName.textContent, 365 * 10); // Store surah name for 10 years
         createSession();
+        audio.play();
     } else {
         clearInterval(intervalId); // Clear the interval using the stored ID
         time = (startingMinutes * 60) + 6;
         updateCountdown(); // Update the timer display immediately
         playbtn.innerHTML = '<i class="fa-solid fa-play"></i>';
         isNotClicked = true;
-        
+        audio.pause();
     }
 }
 
