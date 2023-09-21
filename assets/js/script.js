@@ -115,7 +115,14 @@ function playfn() {
         audio.pause();
     }
 }
-
+audio.addEventListener('ended', () => {
+    const timerSpan = document.querySelector("div#timer span");
+    if (timerSpan.textContent === "00:00") {
+      audio.pause();
+    } else {
+      audio.currentTime = 0;
+    }
+  });
 
 function loadSessions() {
     let savedSessions = getCookie('sessions'); // Retrieve the saved sessions from a cookie

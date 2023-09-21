@@ -23,7 +23,7 @@ margin: 30px;
 div#surahId {
     background-color: rgb(11 12 12 / 11%);
     border-radius: 10px;
-    width: 16%;
+    width: 16rem;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,7 +76,7 @@ div#timer span {
     color: #01ACEF;
 }
 #sessionHistory {
-    width: 30%;
+    width: 28rem;
     display: inline-flex;
     flex-direction: column;
     background: rgb(11 12 12 / 11%);
@@ -120,3 +120,40 @@ div#surahTimerTime p {
     font-size: 25px;
     padding: 0px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sessionHistory {
+      width: 17rem;
+      display: inline-flex;
+      flex-direction: column;
+      background: rgb(11 12 12 / 11%);
+      padding: 10px 20px;
+      border-radius: 16px; 
+    }
+    .surahTitle h3 {
+        font-size: 1rem;
+      }
+      .surahDate {
+        margin: 15px 0px 0 0;
+        font-size: 0.8rem;
+      }
+      div#surahTimerTime p {
+        margin-right: 10px;
+      }
+      div#suraHistory .icon {
+        padding: 23px;
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #sessionHistory {
+        width: 25rem;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
