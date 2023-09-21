@@ -13,6 +13,12 @@ window.addEventListener('load', function () {
 });
 
 function updateCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    // Update the timer display
+    timer.innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
     // Check if the timer has reached "00:00"
     if (minutes === 0 && seconds === 0) {
         clearInterval(intervalId); // Clear the interval
@@ -142,4 +148,3 @@ function loadSessions() {
         });
     }
 }
-
