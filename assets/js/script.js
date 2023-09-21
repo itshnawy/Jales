@@ -121,6 +121,7 @@ audio.addEventListener('ended', () => {
       audio.pause();
     } else {
       audio.currentTime = 0;
+      audio.play();
     }
   });
 
