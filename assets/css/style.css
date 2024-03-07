@@ -172,7 +172,7 @@ div#surahTimerTime p {
 .SurahCardSelection {
     background-color: rgb(23 107 135);
     border-radius: 10px;
-    width: 7rem;
+    width: 12rem;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
