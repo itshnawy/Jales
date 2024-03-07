@@ -6,7 +6,9 @@ let isNotClicked = true;
 let intervalId; // Variable to store the interval ID
 let surahName = document.querySelector(".surahName h3");
 let sessions = document.querySelector("#sessionHistory")
-const audio = document.getElementById('myAudio');
+const audio = document.querySelector('#myAudio');
+let chooseSurah = document.querySelector('.chooseSurah');
+let surahId = document.querySelector("#surahId");
 
 window.addEventListener('load', function () {
     loadSessions();
@@ -148,3 +150,51 @@ function loadSessions() {
         });
     }
 }
+
+function choosetheSurah() {
+    let modal = document.createElement("div");
+    modal.classList.add("modal");
+    surahId.style.cursor = "context-menu"
+    document.body.style.cursor = "context-menu"
+    fetch('../assets/Json/Surahdata.json') // Fetch the JSON file
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json(); // Parse the JSON response
+    })
+    .then(data => {
+      // Iterate over each object in the JSON array
+      data.forEach(item => {
+        const sname = item.name;
+        const audioSrc = item.src;
+        let icon = '<div class="icon"><i class="fa-solid fa-music"></i></div>';
+        let content = "<div class='SurahCardSelection' data-audio-src='" + audioSrc + "' data-name='" + "سورة " + sname + "'>"  + "سورة " + sname +'<i class="fa-solid fa-add" style="color: #01ACEF;background: #0000002b;padding: 4px 5px;border-radius: 10px;font-size: 13px;"></i>'+ "</div>";
+        modal.innerHTML += content;
+      });
+      
+      document.body.appendChild(modal);
+
+      let SurahCardSelections = document.querySelectorAll(".SurahCardSelection");
+      SurahCardSelections.forEach(card => {
+        card.addEventListener('click', setAndClose);
+      });
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
+function setAndClose(event) {
+    let modal = document.querySelector(".modal")
+  let audioSrc = event.currentTarget.dataset.audioSrc;
+  let sname = event.currentTarget.dataset.name;
+  let theAudio = document.querySelector('#myAudio');
+  document.querySelector(".surahName h3").innerHTML = sname;
+  surahId.style.cursor = "pointer"
+  document.body.style.cursor = "auto"
+  theAudio.src = audioSrc;
+  modal.remove()
+}
+
+surahId.addEventListener('click', choosetheSurah);

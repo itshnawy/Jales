@@ -1,0 +1,7 @@
+# Jales
+
+## Documentation
+
+### Functions
+
+#### chooseSurah()

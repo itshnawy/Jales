@@ -157,3 +157,29 @@ div#surahTimerTime p {
 @media only screen and (min-width: 768px) {
 
 } 
+
+.modal {
+    z-index: 99999999999999;
+    width: 28rem;
+    display: inline;
+    background: rgb(11 12 12 / 33%);
+    padding: 20px 31px;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    right: 33%;
+}
+.SurahCardSelection {
+    background-color: rgb(23 107 135);
+    border-radius: 10px;
+    width: 7rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+}
