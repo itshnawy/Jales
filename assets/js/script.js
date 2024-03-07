@@ -1,4 +1,4 @@
-const startingMinutes = 14.9;
+const startingMinutes = 15;
 let time = (startingMinutes * 60) + 5;
 let playbtn = document.querySelector("#playpauseBtn");
 let timer = document.querySelector("#timer span");
@@ -9,6 +9,7 @@ let sessions = document.querySelector("#sessionHistory")
 const audio = document.querySelector('#myAudio');
 let chooseSurah = document.querySelector('.chooseSurah');
 let surahId = document.querySelector("#surahId");
+const timerSpan = document.querySelector("div#timer span");
 
 window.addEventListener('load', function () {
     loadSessions();
@@ -118,7 +119,6 @@ function playfn() {
         setCookie('countdownDate', playDate, 365 * 10); // Store play date for 10 years
         setCookie('countdownSurah', surahName.textContent, 365 * 10); // Store surah name for 10 years
         audio.play();
-        createSession();
     } else {
         clearInterval(intervalId); // Clear the interval using the stored ID
         time = (startingMinutes * 60) + 6;
@@ -127,10 +127,10 @@ function playfn() {
         isNotClicked = true;
         audio.pause();
     }
+    intervallId
 }
 
 audio.addEventListener('ended', () => {
-    const timerSpan = document.querySelector("div#timer span");
     if (timerSpan.textContent === "00:00") {
       audio.pause();
     } else {
@@ -200,3 +200,31 @@ function setAndClose(event) {
 }
 
 surahId.addEventListener('click', choosetheSurah);
+
+
+function toast(text,color,fontColor) {
+    let toast = document.createElement("div");
+    toast.classList.add("toast");
+   let closebtn = "<button id='close' onclick='colseToast()'>"+ "<i class='fa-solid fa-close'></i>" + "</button>";
+   let ttext = "<p id='toastext' style='color:"+ fontColor +";'"+">" +  text + "</p>";
+    toast.innerHTML = ttext + closebtn;
+    toast.style.background = color;
+
+    document.body.appendChild(toast)
+}
+function colseToast() {
+ let toast = document.querySelector(".toast")
+ toast.remove()
+}
+
+
+let intervallId = setInterval(afterTimer, 1000); // Store the interval ID
+
+function afterTimer() {
+    const timerSpan = document.querySelector("div#timer span");
+    if (timerSpan.textContent === "00:00" || timerSpan.textContent === "0:00") {
+        toast("انتهت الجلسة بنجاح", "#0c4f65", "#fff");
+        createSession();
+        clearInterval(intervallId); // Stop the interval when the condition is met
+    } 
+}
