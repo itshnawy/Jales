@@ -120,44 +120,6 @@ div#surahTimerTime p {
     font-size: 25px;
     padding: 0px;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    #sessionHistory {
-      width: 17rem;
-      display: inline-flex;
-      flex-direction: column;
-      background: rgb(11 12 12 / 11%);
-      padding: 10px 20px;
-      border-radius: 16px; 
-    }
-    .surahTitle h3 {
-        font-size: 1rem;
-      }
-      .surahDate {
-        margin: 15px 0px 0 0;
-        font-size: 0.8rem;
-      }
-      div#surahTimerTime p {
-        margin-right: 10px;
-      }
-      div#suraHistory .icon {
-        padding: 23px;
-      }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #sessionHistory {
-        width: 25rem;
-      }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-} 
-
 .modal {
     z-index: 99999999999999;
     width: 28rem;
@@ -211,3 +173,61 @@ button#close {
 #toastext {
     font-size: 16px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sessionHistory {
+      width: 17rem;
+      display: inline-flex;
+      flex-direction: column;
+      background: rgb(11 12 12 / 11%);
+      padding: 10px 20px;
+      border-radius: 16px; 
+    }
+    .surahTitle h3 {
+        font-size: 1rem;
+      }
+      .surahDate {
+        margin: 15px 0px 0 0;
+        font-size: 0.8rem;
+      }
+      div#surahTimerTime p {
+        margin-right: 10px;
+      }
+      div#suraHistory .icon {
+        padding: 23px;
+      }
+      .modal {
+        width: 14rem;
+        right: 15.5%;
+    }
+    .toast {
+        width: 11rem;
+        right: 13.5%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #sessionHistory {
+        width: 25rem;
+      }
+      .modal {
+        right: 11.5%;
+    }
+    .toast {
+        width: 23rem;
+        right: 16%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .modal {
+        right: 33%;
+    }
+    .toast {
+        width: 28rem;
+        right: 33%;
+    }
+} 

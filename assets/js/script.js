@@ -1,4 +1,4 @@
-const startingMinutes = 15;
+const startingMinutes = 14.9;
 let time = (startingMinutes * 60) + 5;
 let playbtn = document.querySelector("#playpauseBtn");
 let timer = document.querySelector("#timer span");
