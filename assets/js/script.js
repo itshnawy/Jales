@@ -155,7 +155,11 @@ function loadSessions() {
 function choosetheSurah() {
     let modal = document.createElement("div");
     modal.classList.add("modal");
-    modal.innerHTML = "<h1>إختر السورة</h1>";
+    let row = document.createElement("div");
+    row.classList.add("row");
+    modal.innerHTML = "<h1>إختر السورة</h1>"
+    modal.appendChild(row)
+    
     surahId.style.cursor = "context-menu"
     document.body.style.cursor = "context-menu"
     fetch('../assets/Json/Surahdata.json') // Fetch the JSON file
@@ -170,11 +174,9 @@ function choosetheSurah() {
       data.forEach(item => {
         const sname = item.name;
         const audioSrc = item.src;
-        let icon = '<div class="icon"><i class="fa-solid fa-music"></i></div>';
         let content = "<div class='SurahCardSelection' data-audio-src='" + audioSrc + "' data-name='" + "سورة " + sname + "'>"  + "سورة " + sname +'<i class="fa-solid fa-add" style="color: #01ACEF;background: #0000002b;padding: 4px 5px;border-radius: 10px;font-size: 13px;"></i>'+ "</div>";
-        modal.innerHTML += content;
+        row.innerHTML += content;
       });
-      
       document.body.appendChild(modal);
 
       let SurahCardSelections = document.querySelectorAll(".SurahCardSelection");
