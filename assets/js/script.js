@@ -117,8 +117,8 @@ function playfn() {
         setCookie('countdownTime', theCTime, 365 * 10); // Store countdown time for 10 years (as an example)
         setCookie('countdownDate', playDate, 365 * 10); // Store play date for 10 years
         setCookie('countdownSurah', surahName.textContent, 365 * 10); // Store surah name for 10 years
-        createSession();
         audio.play();
+        createSession();
     } else {
         clearInterval(intervalId); // Clear the interval using the stored ID
         time = (startingMinutes * 60) + 6;
@@ -128,6 +128,7 @@ function playfn() {
         audio.pause();
     }
 }
+
 audio.addEventListener('ended', () => {
     const timerSpan = document.querySelector("div#timer span");
     if (timerSpan.textContent === "00:00") {
@@ -154,6 +155,7 @@ function loadSessions() {
 function choosetheSurah() {
     let modal = document.createElement("div");
     modal.classList.add("modal");
+    modal.innerHTML = "<h1>إختر السورة</h1>";
     surahId.style.cursor = "context-menu"
     document.body.style.cursor = "context-menu"
     fetch('../assets/Json/Surahdata.json') // Fetch the JSON file

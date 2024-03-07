@@ -162,12 +162,15 @@ div#surahTimerTime p {
     z-index: 99999999999999;
     width: 28rem;
     display: inline;
-    background: rgb(11 12 12 / 33%);
+    background: #0c4f65;
     padding: 20px 31px;
     border-radius: 16px;
     position: absolute;
-    top: 50%;
+    top: 33%;
     right: 33%;
+}
+.modal h1 {
+    color:#Fff;
 }
 .SurahCardSelection {
     background-color: rgb(23 107 135);
