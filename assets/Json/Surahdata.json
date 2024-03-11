@@ -158,6 +158,294 @@
     {
       "name": "غافر",
       "src": "https://server11.mp3quran.net/yasser/040.mp3"
+    },
+    {
+      "name": "فصلت",
+      "src": "https://server11.mp3quran.net/yasser/041.mp3"
+    },
+    {
+      "name": "الشوري",
+      "src": "https://server11.mp3quran.net/yasser/042.mp3"
+    },
+    {
+      "name": "الزخرف",
+      "src": "https://server11.mp3quran.net/yasser/043.mp3"
+    },
+    {
+      "name": "الدخان",
+      "src": "https://server11.mp3quran.net/yasser/044.mp3"
+    },
+    {
+      "name": "الجاثيه",
+      "src": "https://server11.mp3quran.net/yasser/045.mp3"
+    },
+    {
+      "name": "الأحقاف",
+      "src": "https://server11.mp3quran.net/yasser/046.mp3"
+    },
+    {
+      "name": "محمد",
+      "src": "https://server11.mp3quran.net/yasser/047.mp3"
+    },
+    {
+      "name": "الفتح",
+      "src": "https://server11.mp3quran.net/yasser/047.mp3"
+    },
+    {
+      "name": "الحجرات",
+      "src": "https://server11.mp3quran.net/yasser/048.mp3"
+    },
+    {
+      "name": "ق",
+      "src": "https://server11.mp3quran.net/yasser/049.mp3"
+    },
+    {
+      "name": "الذاريات",
+      "src": "https://server11.mp3quran.net/yasser/050.mp3"
+    },
+    {
+      "name": "الطور",
+      "src": "https://server11.mp3quran.net/yasser/051.mp3"
+    },
+    {
+      "name": "النجم",
+      "src": "https://server11.mp3quran.net/yasser/052.mp3"
+    },
+    {
+      "name": "القمر",
+      "src": "https://server11.mp3quran.net/yasser/053.mp3"
+    },
+    {
+      "name": "الرحمن",
+      "src": "https://server11.mp3quran.net/yasser/054.mp3"
+    },
+    {
+      "name": "الواقعه",
+      "src": "https://server11.mp3quran.net/yasser/055.mp3"
+    },
+    {
+      "name": "الحديد",
+      "src": "https://server11.mp3quran.net/yasser/056.mp3"
+    },
+    {
+      "name": "المجادلة",
+      "src": "https://server11.mp3quran.net/yasser/057.mp3"
+    },
+    {
+      "name": "الحشر",
+      "src": "https://server11.mp3quran.net/yasser/058.mp3"
+    },
+    {
+      "name": "الممتحنة",
+      "src": "https://server11.mp3quran.net/yasser/059.mp3"
+    },
+    {
+      "name": "الصف",
+      "src": "https://server11.mp3quran.net/yasser/060.mp3"
+    },
+    {
+      "name": "الجمعة",
+      "src": "https://server11.mp3quran.net/yasser/061.mp3"
+    },
+    {
+      "name": "المنافقون",
+      "src": "https://server11.mp3quran.net/yasser/062.mp3"
+    },
+    {
+      "name": "التغابن",
+      "src": "https://server11.mp3quran.net/yasser/063.mp3"
+    },
+    {
+      "name": "الطلاق",
+      "src": "https://server11.mp3quran.net/yasser/064.mp3"
+    },
+    {
+      "name": "التحريم",
+      "src": "https://server11.mp3quran.net/yasser/065.mp3"
+    },
+    {
+      "name": "المك",
+      "src": "https://server11.mp3quran.net/yasser/066.mp3"
+    },
+    {
+      "name": "القلم",
+      "src": "https://server11.mp3quran.net/yasser/067.mp3"
+    },
+    {
+      "name": "الحاقه",
+      "src": "https://server11.mp3quran.net/yasser/068.mp3"
+    },
+    {
+      "name": "المعارج",
+      "src": "https://server11.mp3quran.net/yasser/069.mp3"
+    },
+    {
+      "name": "نوح",
+      "src": "https://server11.mp3quran.net/yasser/070.mp3"
+    },
+    {
+      "name": "الجن",
+      "src": "https://server11.mp3quran.net/yasser/071.mp3"
+    },
+    {
+      "name": "المزمل",
+      "src": "https://server11.mp3quran.net/yasser/072.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/073.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/074.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/075.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/076.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/077.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/078.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/079.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/080.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/081.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/082.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/083.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/084.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/085.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/086.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/087.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/088.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/089.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/090.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/091.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/092.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/093.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/094.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/095.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/096.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/097.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/098.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/099.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/100.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/101.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/102.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/103.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/104.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/105.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/106.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/107.mp3"
+    },
+    {
+      "name": "الصافات",
+      "src": "https://server11.mp3quran.net/yasser/108.mp3"
+    },
+    {
+      "name": "ص",
+      "src": "https://server11.mp3quran.net/yasser/109.mp3"
+    },
+    {
+      "name": "الزمر",
+      "src": "https://server11.mp3quran.net/yasser/110.mp3"
+    },
+    {
+      "name": "غافر",
+      "src": "https://server11.mp3quran.net/yasser/111.mp3"
     }
   ]
   
