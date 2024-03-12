@@ -83,6 +83,9 @@ div#timer span {
     height: 29vh;
     overflow-y: auto;
 }
+p#copyright {
+    color: #Fff;
+}
 .card {
     display: flex;
     flex-direction: row;
