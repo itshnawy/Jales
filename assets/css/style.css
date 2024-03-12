@@ -279,7 +279,14 @@ button.timertime {
     all: unset;
     margin-right: 15px;
 }
-
+div#overlay {
+    width: 100%;
+    background: #0000008c;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #sessionHistory {

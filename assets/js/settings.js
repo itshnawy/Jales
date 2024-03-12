@@ -6,6 +6,9 @@ function changeTimer(timer,timerspan) {setCookie('timerspan', timerspan , 365 * 
 function settings() {
     let settings = document.createElement('div');
     settings.id = 'settings';
+    let overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    document.body.appendChild(overlay)
 
 
 
@@ -21,7 +24,7 @@ function settings() {
     <button class="timertime" onclick="changeTimer('19.9','20:00')"><i class="fa-solid fa-hourglass-half"></i> <p>20 دقيقة</p></button>
     <button class="timertime" onclick="changeTimer('24.9','25:00')"><i class="fa-solid fa-hourglass-half"></i> <p>25 دقيقة</p></button>
     </div>
-    
+
     <h3 id="stitle">تحديد القارئ</h3>
     قريبا
     
@@ -51,9 +54,10 @@ function settings() {
 
 
 
-
+    document.getElementById('overlay').addEventListener('click', closeit)
 
 
 }
 
-function closeit() {document.getElementById('settings').remove()}
+function closeit() {document.getElementById('settings').remove();document.getElementById('overlay').remove()}
+
