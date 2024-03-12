@@ -9,9 +9,10 @@ let surahName = document.querySelector(".surahName h3");
 const audio = document.querySelector('#myAudio');
 const timerSpan = document.querySelector("div#timer span");
 
+var timersspan = getCookie('timerspan') === null ? '14.9' : getCookie('timerspan');
 window.addEventListener('load', function () {
     loadSessions();
-    timerSpan.innerHTML = getCookie('timerspan')
+    timerSpan.innerHTML = timersspan;
 });
 
 function updateCountdown() {
