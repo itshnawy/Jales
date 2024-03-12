@@ -58,7 +58,6 @@ div#surahId .icon {
 div#timer {
     font-size: 7rem;
     color: #fff;
-    margin: 35px 0px 0px;
 }
 div#timer span {
     padding: 0px;
@@ -81,7 +80,7 @@ div#timer span {
     background: rgb(11 12 12 / 11%);
     padding: 20px 31px;
     border-radius: 16px;
-    height: 24vh;
+    height: 29vh;
     overflow-y: auto;
 }
 .card {
