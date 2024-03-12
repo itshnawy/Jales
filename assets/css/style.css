@@ -11,9 +11,11 @@ body {
     display: none !important;
 }
 nav {
-    text-align: center;
+    display: flex;
     background-color: rgb(11 12 12 / 11%);
-    padding: 10px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 #timerSection {
 text-align: center;
@@ -221,6 +223,17 @@ div#header {
 
 #row {
     text-align: center;
+}
+
+
+button#settings {
+    all: unset;
+    color: #Fff;
+    background: rgb(5 59 80 / 31%);
+    padding: 11px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
