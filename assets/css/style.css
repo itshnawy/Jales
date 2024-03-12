@@ -6,7 +6,6 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: Tajawal;
-    text-align: center;
 }
 .empty {
     display: none !important;
@@ -82,6 +81,8 @@ div#timer span {
     background: rgb(11 12 12 / 11%);
     padding: 20px 31px;
     border-radius: 16px;
+    height: 24vh;
+    overflow-y: auto;
 }
 .card {
     display: flex;
@@ -187,6 +188,19 @@ div#header {
     all: unset;
     cursor: pointer;
     color: #fff;
+}
+
+#copyright #link {
+    all: unset;
+    cursor: pointer;
+    color: #01acef;
+    background: #1f4d5d;
+    padding: 5px 10px;
+    border-radius: 11px;
+}
+
+#row {
+    text-align: center;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
