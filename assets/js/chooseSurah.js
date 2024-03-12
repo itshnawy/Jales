@@ -64,31 +64,3 @@ function setAndClose(event) {
 }
 
 surahId.addEventListener('click', choosetheSurah);
-
-
-function toast(text,color,fontColor) {
-    let toast = document.createElement("div");
-    toast.classList.add("toast");
-   let closebtn = "<button id='close' onclick='colseToast()'>"+ "<i class='fa-solid fa-close'></i>" + "</button>";
-   let ttext = "<p id='toastext' style='color:"+ fontColor +";'"+">" +  text + "</p>";
-    toast.innerHTML = ttext + closebtn;
-    toast.style.background = color;
-
-    document.body.appendChild(toast)
-}
-function colseToast() {
- let toast = document.querySelector(".toast")
- toast.remove()
-}
-
-
-let intervallId = setInterval(afterTimer, 1000); // Store the interval ID
-
-function afterTimer() {
-    const timerSpan = document.querySelector("div#timer span");
-    if (timerSpan.textContent === "00:00" || timerSpan.textContent === "0:00") {
-        toast("انتهت الجلسة بنجاح", "#0c4f65", "#fff");
-        createSession();
-        clearInterval(intervallId); // Stop the interval when the condition is met
-    } 
-}

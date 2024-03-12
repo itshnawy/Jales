@@ -1,4 +1,4 @@
-const startingMinutes = 14.9;
+var startingMinutes = getCookie('timer') === null ? '14.9' : getCookie('timer');
 let time = (startingMinutes * 60) + 5;
 let playbtn = document.querySelector("#playpauseBtn");
 let timer = document.querySelector("#timer span");
@@ -11,6 +11,7 @@ const timerSpan = document.querySelector("div#timer span");
 
 window.addEventListener('load', function () {
     loadSessions();
+    timerSpan.innerHTML = getCookie('timerspan')
 });
 
 function updateCountdown() {
@@ -139,7 +140,6 @@ audio.addEventListener('ended', () => {
 
 function loadSessions() {
     let savedSessions = getCookie('sessions'); // Retrieve the saved sessions from a cookie
-
     if (savedSessions) {
         sessionHistory = JSON.parse(savedSessions); // Parse the JSON data
 
@@ -148,4 +148,32 @@ function loadSessions() {
             createSessionCard(session);
         });
     }
+}
+
+
+function toast(text,color,fontColor) {
+    let toast = document.createElement("div");
+    toast.classList.add("toast");
+   let closebtn = "<button id='close' onclick='colseToast()'>"+ "<i class='fa-solid fa-close'></i>" + "</button>";
+   let ttext = "<p id='toastext' style='color:"+ fontColor +";'"+">" +  text + "</p>";
+    toast.innerHTML = ttext + closebtn;
+    toast.style.background = color;
+
+    document.body.appendChild(toast)
+}
+function colseToast() {
+ let toast = document.querySelector(".toast")
+ toast.remove()
+}
+
+
+let intervallId = setInterval(afterTimer, 1000); // Store the interval ID
+
+function afterTimer() {
+    const timerSpan = document.querySelector("div#timer span");
+    if (timerSpan.textContent === "00:00" || timerSpan.textContent === "0:00") {
+        toast("انتهت الجلسة بنجاح", "#0c4f65", "#fff");
+        createSession();
+        clearInterval(intervallId); // Stop the interval when the condition is met
+    } 
 }

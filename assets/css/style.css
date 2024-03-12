@@ -259,6 +259,26 @@ div#header {
 section#ren {
     padding: 20px;
 }
+button.timertime {
+    all: unset;
+    background: #302d2d61;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.chooseTimerTime {
+    display: flex;
+    justify-content: space-between;
+}
+.timertime p {
+    all: unset;
+    margin-right: 15px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
