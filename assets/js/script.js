@@ -157,9 +157,9 @@ function choosetheSurah() {
     modal.classList.add("modal");
     let row = document.createElement("div");
     row.classList.add("row");
-    modal.innerHTML = "<h1>إختر السورة</h1>"
+    modal.innerHTML = `<div id="header"><button id="close-btn" title="Close Button">✖</button><h1>إختر السورة</h1></div>`
     modal.appendChild(row)
-    
+
     surahId.style.cursor = "context-menu"
     document.body.style.cursor = "context-menu"
     fetch('../assets/Json/Surahdata.json') // Fetch the JSON file
@@ -179,14 +179,27 @@ function choosetheSurah() {
       });
       document.body.appendChild(modal);
 
+      let close = document.getElementById("close-btn");
       let SurahCardSelections = document.querySelectorAll(".SurahCardSelection");
       SurahCardSelections.forEach(card => {
         card.addEventListener('click', setAndClose);
       });
+
+      function closefn() {
+        modal.remove()
+        surahId.style.cursor = "pointer"
+        document.body.style.cursor = "auto"
+       }
+       
+    close.addEventListener('click', closefn);
+
+
+
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
     });
+
 }
 
 function setAndClose(event) {

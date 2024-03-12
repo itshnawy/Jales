@@ -177,6 +177,17 @@ button#close {
     overflow-y: scroll;
     height: 15rem;
 }
+div#header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#close-btn {
+    all: unset;
+    cursor: pointer;
+    color: #fff;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #sessionHistory {
