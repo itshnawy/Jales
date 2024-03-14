@@ -270,10 +270,12 @@ button.timertime {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    margin: 3px 0px;
 }
 .chooseTimerTime {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .timertime p {
     all: unset;
@@ -317,6 +319,9 @@ div#overlay {
     .toast {
         width: 11rem;
         right: 13.5%;
+    }
+    #settings {
+        width: 85%;
     }
 }
 
