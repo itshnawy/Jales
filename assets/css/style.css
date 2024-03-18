@@ -289,6 +289,22 @@ div#overlay {
     top: 0;
     cursor: pointer;
 }
+div#search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Tajawal';
+    border-radius: 6px;
+}
+div#search {
+    display: flex;
+    justify-content: center;
+}
+div#search {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #sessionHistory {
