@@ -86,20 +86,20 @@ div#timer span {
     overflow-y: auto;
 }
 
-#sessionHistory::-webkit-scrollbar {
+#sessionHistory::-webkit-scrollbar , .row::-webkit-scrollbar {
     width: 10px;
 
 }
-#sessionHistory::-webkit-scrollbar-track {
+#sessionHistory::-webkit-scrollbar-track , .row::-webkit-scrollbar-track {
     background: rgb(5 59 80 / 31%);
     border-radius: 30px 0px 0px 30px;
 }
-#sessionHistory::-webkit-scrollbar-thumb {
+#sessionHistory::-webkit-scrollbar-thumb , .row::-webkit-scrollbar-thumb {
     background: #01acef;
     border-radius: 16px;
     height: 10vh;
 }
-#sessionHistory::-webkit-scrollbar-thumb:hover {
+#sessionHistory::-webkit-scrollbar-thumb:hover, .row::-webkit-scrollbar-thumb:hover {
     background: #01acefa6;
 }
 
@@ -151,7 +151,7 @@ div#surahTimerTime p {
     padding: 20px 31px;
     border-radius: 16px;
     position: absolute;
-    top: 33%;
+    top: 23%;
     right: 33%;
 }
 .modal h1 {
@@ -296,9 +296,8 @@ div#search input {
     font-family: 'Tajawal';
     border-radius: 6px;
 }
-div#search {
-    display: flex;
-    justify-content: center;
+div#search input:focus {
+outline: none;
 }
 div#search {
     display: flex;
