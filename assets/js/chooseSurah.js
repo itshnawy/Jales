@@ -29,6 +29,23 @@ function choosetheSurah() {
         row.innerHTML += content;
       });
       document.body.appendChild(modal);
+      const modalOpening = [
+        { transform: "scale(0)" },
+        { transform: "scale(1)" },
+      ];
+      
+      const modalOpeningTiming = {
+        duration: 300,
+        iterations: 1,
+      };
+      
+    modal.animate(modalOpening, modalOpeningTiming)
+
+
+
+
+
+
 
       let close = document.getElementById("close-btn");
       let SurahCardSelections = document.querySelectorAll(".SurahCardSelection");
@@ -37,9 +54,24 @@ function choosetheSurah() {
       });
 
       function closefn() {
+     
+        const modalClosing = [
+          { transform: "scale(1)" },
+          { transform: "scale(0)" },
+        ];
+        
+        const modalClosingTiming = {
+          duration: 300,
+          iterations: 1,
+        };
+        
+      const animation = modal.animate(modalClosing, modalClosingTiming)
+      animation.onfinish = function() {
         modal.remove()
         surahId.style.cursor = "pointer"
         document.body.style.cursor = "auto"
+        };
+
        }
        
     close.addEventListener('click', closefn);
@@ -51,8 +83,8 @@ function choosetheSurah() {
       console.error('There was a problem with the fetch operation:', error);
     });
 
+    
 }
-
 function setAndClose(event) {
   let modal = document.querySelector(".modal")
   let audioSrc = event.currentTarget.dataset.audioSrc;
@@ -62,7 +94,22 @@ function setAndClose(event) {
   surahId.style.cursor = "pointer"
   document.body.style.cursor = "auto"
   theAudio.src = audioSrc;
+
+  const modalClosing = [
+    { transform: "scale(1)" },
+    { transform: "scale(0)" },
+  ];
+  
+  const modalClosingTiming = {
+    duration: 300,
+    iterations: 1,
+  };
+  
+const animation = modal.animate(modalClosing, modalClosingTiming)
+animation.onfinish = function() {
   modal.remove()
+  };
 }
+
 
 surahId.addEventListener('click', choosetheSurah);
