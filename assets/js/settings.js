@@ -48,6 +48,18 @@ function settings() {
 
 
 
+    const settingsOpening = [
+        { transform: "translateX(200px)" },
+        { transform: "translateX(0px)" },
+      ];
+      
+      const settingsOpeningTiming = {
+        duration: 300,
+        iterations: 1,
+      };
+      
+      settings.animate(settingsOpening, settingsOpeningTiming)
+    
 
 
 
@@ -56,8 +68,25 @@ function settings() {
 
     document.getElementById('overlay').addEventListener('click', closeit)
 
+    
+    function closeit() {
+        const settingsClosing = [
+            { transform: "translateX(0px)" },
+            { transform: "translateX(200px)" },
+          ];
+          
+          const settingsClosingTiming = {
+            duration: 300,
+            iterations: 1,
+          };
+          
+       const animation = settings.animate(settingsClosing, settingsClosingTiming)
+        animation.onfinish = function() {
+            document.getElementById('settings').remove();
+            document.getElementById('overlay').remove();
+          };
+    
+    }
 
 }
-
-function closeit() {document.getElementById('settings').remove();document.getElementById('overlay').remove()}
 

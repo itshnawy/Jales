@@ -54,7 +54,7 @@ function choosetheSurah() {
 }
 
 function setAndClose(event) {
-    let modal = document.querySelector(".modal")
+  let modal = document.querySelector(".modal")
   let audioSrc = event.currentTarget.dataset.audioSrc;
   let sname = event.currentTarget.dataset.name;
   let theAudio = document.querySelector('#myAudio');
