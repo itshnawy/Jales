@@ -19,7 +19,7 @@ function settings() {
 
 
 
-    settings.innerHTML = '<div id="closebtndiv"><button id="closebtn" onclick="closeit()">✖</button></div>'
+    settings.innerHTML = '<div id="closebtndiv"><button id="closebtn">✖</button></div>'
     + `<section id="ren">
     <h3 id="stitle">تحديد وقت المؤقت</h3>
     <div class="chooseTimerTime">
@@ -79,7 +79,7 @@ function settings() {
 
 
     document.getElementById('overlay').addEventListener('click', closeit)
-
+    document.getElementById('closebtn').addEventListener('click', closeit)
     
     function closeit() {
         const settingsClosing = [
