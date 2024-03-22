@@ -353,8 +353,8 @@ div#search {
     }
 }
 
-/* Medium devices (landscape tablets, 800px and down) */
-@media only screen and (max-width: 800px) {
+/* Medium devices (landscape tablets, 950px and down) */
+@media only screen and (max-width: 950px) {
     #settings {
         width: 50%;
     }
