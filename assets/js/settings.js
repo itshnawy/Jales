@@ -31,9 +31,14 @@ function settings() {
 
     <h3 id="stitle">تحديد القارئ</h3>
     <div class="chooseQareaa">
-    <button class="theQareaa" onclick="changeQareaa('src')">ياسر الدوسري</button>
-    <button class="theQareaa" onclick="changeQareaa('qtm')">ناصر القطامي</button>
-    </div>
+    <button class="theQareaa" onclick="changeQareaa('src')">
+<img src="https://i1.sndcdn.com/artworks-yqaFIhjTMlyQyFHL-5PmjKw-t500x500.jpg" alt="yasser"/>
+<p>ياسر الدوسري<p>
+    </button>
+    <button class="theQareaa" onclick="changeQareaa('qtm')">
+<img src="https://pbs.twimg.com/profile_images/1174520057591947264/NQVlLDtk_400x400.jpg" alt="yasser"/>
+<p>ناصر القطامي<p>
+    </button>
     
     
     
