@@ -29,6 +29,7 @@ function updateCountdown() {
         // Additional logic to handle what should happen when the timer reaches "00:00"
         // For example, you can display a message or perform some other action.
     } else {
+
         time--;
     }
 }

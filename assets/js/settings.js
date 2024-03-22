@@ -2,6 +2,10 @@ const timeSpan = document.querySelector("div#timer span");
 const scriptt = document.createElement("script");
 
 function changeTimer(timer,timerspan) {setCookie('timerspan', timerspan , 365 * 10);setCookie('timer', timer ,365 * 10);location.reload(); }
+function changeQareaa(name) {
+setCookie('Qareaa', name , 365 * 10);
+location.reload();
+}
 
 function settings() {
     let settings = document.createElement('div');
@@ -26,7 +30,10 @@ function settings() {
     </div>
 
     <h3 id="stitle">تحديد القارئ</h3>
-    قريبا
+    <div class="chooseQareaa">
+    <button class="theQareaa" onclick="changeQareaa('src')">ياسر الدوسري</button>
+    <button class="theQareaa" onclick="changeQareaa('qtm')">ناصر القطامي</button>
+    </div>
     
     
     
