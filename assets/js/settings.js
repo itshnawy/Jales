@@ -36,9 +36,33 @@ function settings() {
 <p>ياسر الدوسري<p>
     </button>
     <button class="theQareaa" onclick="changeQareaa('qtm')">
-<img src="https://pbs.twimg.com/profile_images/1174520057591947264/NQVlLDtk_400x400.jpg" alt="yasser"/>
+<img src="https://pbs.twimg.com/profile_images/1174520057591947264/NQVlLDtk_400x400.jpg" alt="qtm"/>
 <p>ناصر القطامي<p>
     </button>
+    <button class="theQareaa" onclick="changeQareaa('maher')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Maher_Al_Mueaqly.png/270px-Maher_Al_Mueaqly.png" alt="maher"/>
+    <p> ماهر المعيقلي<p>
+        </button>
+        <button class="theQareaa" onclick="changeQareaa('afs')">
+        <img src="https://i1.sndcdn.com/artworks-000019055020-yr9cjc-t500x500.jpg" alt="afs"/>
+        <p>مشاري العفاسي<p>
+            </button>
+            <button class="theQareaa" onclick="changeQareaa('shatri')">
+            <img src="https://way2quran.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fway2quran_storage%2Fimgs%2Fabu-bakr-al-shatri.jpg&w=640&q=75" alt="shatri"/>
+            <p>أبو بكر الشاطري<p>
+                </button>
+                <button class="theQareaa" onclick="changeQareaa('husr')">
+                <img src="https://elhosary.co/wp-content/uploads/2023/01/%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D9%88%D8%AF-%D8%AE%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%B5%D8%B1%D9%8A.jpg" alt="husr"/>
+                <p>الحصري<p>
+                    </button>
+                    <button class="theQareaa" onclick="changeQareaa('minsh')">
+                    <img src="https://i1.sndcdn.com/artworks-000284633237-7gdg9t-t500x500.jpg" alt="minsh"/>
+                    <p> المنشاوي<p>
+                        </button>
+                        <button class="theQareaa" onclick="changeQareaa('basit')">
+                        <img src="https://i1.sndcdn.com/artworks-000051458372-tqvzus-t500x500.jpg" alt="basit"/>
+                        <p>عبدالباسط عبدالصمد<p>
+                            </button>
     
     
     

@@ -262,7 +262,20 @@ div#header {
 section#ren {
     padding: 20px;
 }
-button.timertime , .theQareaa {
+.theQareaa {
+    all: unset;
+    background: #302d2d61;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    text-align: -webkit-center;
+}
+button.timertime {
     all: unset;
     background: #302d2d61;
     padding: 10px 15px;
@@ -280,9 +293,19 @@ button.timertime , .theQareaa {
     width: 50px;
     border-radius: 100px;
     border: 5px solid #01acef;
-    margin-left: 10px;
+    margin-bottom:5px ;
 }
-.chooseTimerTime , .chooseQareaa {
+.theQareaa p {
+all: unset;
+}
+.chooseQareaa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+.chooseTimerTime {
     display: flex;
     justify-content: space-between;
     flex-direction: column;

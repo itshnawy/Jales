@@ -2,7 +2,13 @@
   {
     "name": "الفاتحة",
     "src": "https://server11.mp3quran.net/yasser/001.mp3",
-    "qtm": "https://server6.mp3quran.net/qtm/001.mp3"
+    "qtm": "https://server6.mp3quran.net/qtm/001.mp3",
+    "maher": "https://server12.mp3quran.net/maher/001.mp3",
+    "afs": "https://server8.mp3quran.net/afs/001.mp3",
+    "shatri" : "https://server11.mp3quran.net/shatri/001.mp3",
+    "husr" : "https://server13.mp3quran.net/husr/001.mp3",
+    "minsh" : "https://server10.mp3quran.net/minsh/001.mp3",
+    "basit" : "https://server7.mp3quran.net/basit/001.mp3"
   },
   {
     "name": "البقرة",

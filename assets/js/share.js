@@ -1,6 +1,6 @@
 function sharing() {
     var shareData = {
-        title: "Jales | الجليس",
+        title: window.location.title,
         text: "جلسات راحة مع القرأن الكريم",
         url: window.location.href
     }
