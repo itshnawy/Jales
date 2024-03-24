@@ -196,5 +196,10 @@ function afterTimer() {
         toast("انتهت الجلسة بنجاح", "#0c4f65", "#fff");
         createSession();
         clearInterval(intervallId); // Stop the interval when the condition is met
+        time = (startingMinutes * 60) + 6;
+        updateCountdown(); // Update the timer display immediately
+        playbtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+        isNotClicked = true;
+        audio.currentTime = 0;
     } 
 }
