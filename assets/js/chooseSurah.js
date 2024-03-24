@@ -112,5 +112,13 @@ animation.onfinish = function() {
   };
 }
 
+function search() {
+  let searchBox = document.getElementById("search")
+  
+}
+
+
+
+
 
 surahId.addEventListener('click', choosetheSurah);
