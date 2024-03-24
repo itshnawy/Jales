@@ -6,7 +6,7 @@ function choosetheSurah() {
     modal.classList.add("modal");
     let row = document.createElement("div");
     row.classList.add("row");
-    modal.innerHTML = `<div id="header"><button id="close-btn" title="Close Button">✖</button><h1>إختر السورة</h1></div>
+    modal.innerHTML = `<div id="header"><button id="close-btn" title="Close Button"><i class="fa-solid fa-x"></i></button><h1>إختر السورة</h1></div>
     <div id="search"><input type="text" placeholder="ابحث" /></div>
     `
     modal.appendChild(row)

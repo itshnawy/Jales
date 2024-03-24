@@ -19,7 +19,7 @@ function settings() {
 
 
 
-    settings.innerHTML = '<div id="closebtndiv"><button id="closebtn">✖</button></div>'
+    settings.innerHTML = '<div id="closebtndiv"><button id="closebtn"><i class="fa-solid fa-x"></i></button></div>'
     + `<section id="ren">
     <h3 id="stitle">تحديد وقت المؤقت</h3>
     <div class="chooseTimerTime">
