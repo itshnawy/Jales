@@ -403,4 +403,7 @@ div#search {
     #settings {
         width: 95%;
     }
+    div#surahId {
+        margin-bottom: 10px;
+    }
 }
