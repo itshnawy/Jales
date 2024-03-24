@@ -256,6 +256,7 @@ div#header {
     padding: 15px;
 }
 #closebtn {
+    color: #Fff;
     all: unset;
     cursor: pointer;
 }
