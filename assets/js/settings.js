@@ -61,7 +61,7 @@ function settings() {
                         </button>
                         <button class="theQareaa" onclick="changeQareaa('basit')">
                         <img src="https://i1.sndcdn.com/artworks-000051458372-tqvzus-t500x500.jpg" alt="basit"/>
-                        <p>عبدالباسط عبدالصمد<p>
+                        <p>عبدالباسط<p>
                             </button>
     
     
