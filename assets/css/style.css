@@ -6,6 +6,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: Tajawal;
+    user-select: none;
 }
 .empty {
     display: none !important;
