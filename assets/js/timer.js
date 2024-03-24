@@ -9,10 +9,29 @@ let surahName = document.querySelector(".surahName h3");
 const audio = document.querySelector('#myAudio');
 const timerSpan = document.querySelector("div#timer span");
 
+
+
+
 var timersspan = getCookie('timerspan') === null ? '15:00' : getCookie('timerspan');
+function fetchdata() {
+    fetch('../assets/Json/Surahdata.json')
+    .then(response => response.json())
+    .then(data => {
+        const firstItem = data[0];
+        let chc = getCookie('Qareaa');
+        const audioSrc = firstItem[chc] !== undefined ? firstItem[chc] : firstItem['src'];
+        audio.src = audioSrc;
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+}
+
+
 window.addEventListener('load', function () {
     loadSessions();
     timerSpan.innerHTML = timersspan;
+    fetchdata()
 });
 
 function updateCountdown() {
