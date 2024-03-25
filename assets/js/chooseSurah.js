@@ -95,6 +95,8 @@ function choosetheSurah() {
 }
 function setAndClose(event) {
   let modal = document.querySelector(".modal")
+  let overlay = document.querySelector("#overlay")
+
   let audioSrc = event.currentTarget.dataset.audioSrc;
   let sname = event.currentTarget.dataset.name;
   let theAudio = document.querySelector('#myAudio');
@@ -116,6 +118,7 @@ function setAndClose(event) {
 const animation = modal.animate(modalClosing, modalClosingTiming)
 animation.onfinish = function() {
   modal.remove()
+  overlay.remove()
   };
 }
 
