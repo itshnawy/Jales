@@ -32,6 +32,7 @@ window.addEventListener('load', function () {
     loadSessions();
     timerSpan.innerHTML = timersspan;
     fetchdata()
+    hnotify()
 });
 
 function updateCountdown() {
