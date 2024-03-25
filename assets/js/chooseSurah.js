@@ -29,7 +29,13 @@ function choosetheSurah() {
         let content = "<div class='SurahCardSelection' data-audio-src='" + audioSrc + "' data-name='" + "سورة " + sname + "'>"  + "سورة " + sname +'<i class="fa-solid fa-add" style="color: #01ACEF;background: #0000002b;padding: 4px 5px;border-radius: 10px;font-size: 13px;"></i>'+ "</div>";
         row.innerHTML += content;
       });
+      let overlay = document.createElement('div');
+      overlay.id = 'overlay';
+      document.body.appendChild(overlay)
+    
       document.body.appendChild(modal);
+      
+      document.getElementById('overlay').addEventListener('click', closefn)
       const modalOpening = [
         { transform: "scale(0)" },
         { transform: "scale(1)" },
@@ -69,6 +75,7 @@ function choosetheSurah() {
       const animation = modal.animate(modalClosing, modalClosingTiming)
       animation.onfinish = function() {
         modal.remove()
+        overlay.remove()
         surahId.style.cursor = "pointer"
         document.body.style.cursor = "auto"
         };
