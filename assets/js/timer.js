@@ -1,4 +1,4 @@
-var startingMinutes = getCookie('timer') === null ? '14.9' : getCookie('timer');
+var startingMinutes = getCookie('timer') === null ? '9.9' : getCookie('timer');
 let time = (startingMinutes * 60) + 5;
 let playbtn = document.querySelector("#playpauseBtn");
 let timer = document.querySelector("#timer span");
@@ -12,7 +12,7 @@ const timerSpan = document.querySelector("div#timer span");
 
 
 
-var timersspan = getCookie('timerspan') === null ? '15:00' : getCookie('timerspan');
+var timersspan = getCookie('timerspan') === null ? '10:00' : getCookie('timerspan');
 function fetchdata() {
     fetch('../assets/Json/Surahdata.json')
     .then(response => response.json())
