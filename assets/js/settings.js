@@ -13,6 +13,7 @@ function settings() {
     let overlay = document.createElement('div');
     overlay.id = 'overlay';
     document.body.appendChild(overlay)
+    document.body.style.overflow = "hidden";
 
 
 
@@ -120,6 +121,7 @@ function settings() {
         animation.onfinish = function() {
             document.getElementById('settings').remove();
             document.getElementById('overlay').remove();
+            document.body.style.overflow = "auto";
           };
     
     }
