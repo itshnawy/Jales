@@ -140,6 +140,7 @@ function playfn() {
         setCookie('countdownDate', playDate, 365 * 10); // Store play date for 10 years
         setCookie('countdownSurah', surahName.textContent, 365 * 10); // Store surah name for 10 years
         audio.play();
+        audio.setAttribute('preload', 'auto');
     } else {
         clearInterval(intervalId); // Clear the interval using the stored ID
         time = (startingMinutes * 60) + 6;
