@@ -42,7 +42,7 @@ function choosetheSurah() {
       ];
       
       const modalOpeningTiming = {
-        duration: 300,
+        duration: 200,
         iterations: 1,
       };
       
@@ -111,7 +111,7 @@ function setAndClose(event) {
   ];
   
   const modalClosingTiming = {
-    duration: 300,
+    duration: 200,
     iterations: 1,
   };
   
