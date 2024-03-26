@@ -7,7 +7,7 @@ function choosetheSurah() {
     let row = document.createElement("div");
     row.classList.add("row");
     modal.innerHTML = `<div id="header"><button id="close-btn" title="Close Button"><i class="fa-solid fa-x"></i></button><h1>إختر السورة</h1></div>
-    <div id="search"><input type="text" placeholder="ابحث" /></div>
+    <div id="search"><input id="searchbox" type="text" placeholder="ابحث" /></div>
     `
     modal.appendChild(row)
 
@@ -34,7 +34,9 @@ function choosetheSurah() {
       document.body.appendChild(overlay)
     
       document.body.appendChild(modal);
-      
+
+      search();
+ 
       document.getElementById('overlay').addEventListener('click', closefn)
       const modalOpening = [
         { transform: "scale(0)" },
@@ -123,9 +125,34 @@ animation.onfinish = function() {
 }
 
 function search() {
-  let searchBox = document.getElementById("search")
+  let searchBox = document.getElementById("search");
+  if (!searchBox) {
+    console.error("Search box element not found");
+    return;
+  }
+  let input = searchBox.querySelector("input");
+  if (!input) {
+    console.error("Input element inside search box not found");
+    return;
+  }
   
+  let SurahCardSelections = document.querySelectorAll(".SurahCardSelection");
+
+  input.addEventListener("input", function(event) {
+    let searchText = event.target.value.trim().toLowerCase();
+
+    SurahCardSelections.forEach(card => {
+      let cardName = card.textContent.trim().toLowerCase();
+      if (cardName.includes(searchText)) {
+        card.style.display = "inline-flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 }
+
+
 
 
 
