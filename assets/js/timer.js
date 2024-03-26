@@ -7,7 +7,6 @@ let intervalId; // Variable to store the interval ID
 let sessions = document.querySelector("#sessionHistory")
 let surahName = document.querySelector(".surahName h3");
 const audio = document.querySelector('#myAudio');
-audio.preload = 'auto';
 const timerSpan = document.querySelector("div#timer span");
 
 
