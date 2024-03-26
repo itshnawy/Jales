@@ -86,7 +86,7 @@ function settings() {
 
 
     const settingsOpening = [
-        { transform: "translateX(200px)" },
+        { transform: "translateX(500px)" },
         { transform: "translateX(0px)" },
       ];
       
@@ -109,7 +109,7 @@ function settings() {
     function closeit() {
         const settingsClosing = [
             { transform: "translateX(0px)" },
-            { transform: "translateX(200px)" },
+            { transform: "translateX(500px)" },
           ];
           
           const settingsClosingTiming = {
