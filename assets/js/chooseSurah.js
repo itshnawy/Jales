@@ -158,4 +158,8 @@ function search() {
 
 
 
+
+
+
+
 surahId.addEventListener('click', choosetheSurah);
