@@ -1,18 +1,16 @@
-if ('wakeLock' in navigator) {
-    // Request a wake lock
-    navigator.wakeLock.request('screen')
-      .then(wakeLock => {
-        console.log('Screen wake lock is active');
-        // Release the wake lock when the page is unloaded
-        window.addEventListener('unload', () => {
-          wakeLock.release().then(() => {
-            console.log('Screen wake lock is released');
-          });
-        });
-      })
-      .catch(error => {
-        console.error('Failed to request screen wake lock:', error);
-      });
-  } else {
-    console.warn('Screen wake lock API is not supported');
+  // Function to periodically trigger a small change
+  function keepAwake() {
+    // Triggering a console log here, you can replace it with any action
+    console.log('Keeping mobile awake');
   }
+
+  // Periodically trigger the keepAwake function
+  setInterval(keepAwake, 60000); // Adjust the interval as needed (e.g., every minute)
+
+  // Use Page Visibility API to check if the page is visible
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      // If the page becomes visible, trigger keepAwake immediately
+      keepAwake();
+    }
+  });
