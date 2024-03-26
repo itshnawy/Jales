@@ -28,6 +28,11 @@ function choosetheSurah() {
         const audioSrc = item[chc] !== undefined ? item[chc] : item['src'];
         let content = "<div class='SurahCardSelection' data-audio-src='" + audioSrc + "' data-name='" + "سورة " + sname + "'>"  + "سورة " + sname +'<i class="fa-solid fa-add" style="color: #01ACEF;background: #0000002b;padding: 4px 5px;border-radius: 10px;font-size: 13px;"></i>'+ "</div>";
         row.innerHTML += content;
+
+
+        const audio = new Audio(audioSrc);
+        audio.preload = 'auto';
+
       });
       let overlay = document.createElement('div');
       overlay.id = 'overlay';
